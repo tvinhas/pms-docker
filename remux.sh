@@ -8,7 +8,7 @@ fi
 #vars
 file=$1
 outmkv="${file%.*}.mkv"
-logfile="/config/tmp/remux.log"
+logfile="/tmp/remux.log"
 
 if ffmpeg -fflags +genpts -i "$file" -c:v copy -c:a copy -preset superfast -sn -movflags faststart "$outmkv"  &>> $logfile
 then
