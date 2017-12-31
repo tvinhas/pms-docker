@@ -11,7 +11,7 @@ git clone git://github.com/erikkaashoek/Comskip && \
 cd Comskip && \
 ./autogen.sh && \
 ./configure && \
-make && \
+make
 
 ADD ./adskip.sh /usr/bin/adskip.sh
 ADD ./comskip.ini /usr/lib/plexmediaserver/Resources/comskip.ini
