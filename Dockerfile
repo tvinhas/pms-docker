@@ -5,13 +5,12 @@ RUN apt-get update && \
     apt-get install -y git build-essential libargtable2-dev autoconf \
     automake libtool libtool-bin ffmpeg libsdl1.2-dev libavutil-dev \
     libavformat-dev libavcodec-dev mkvtoolnix bc && \
-
-cd /opt && \
-git clone git://github.com/erikkaashoek/Comskip && \
-cd Comskip && \
-./autogen.sh && \
-./configure && \
-make
+    cd /opt && \
+    git clone git://github.com/erikkaashoek/Comskip && \
+    cd Comskip && \
+    ./autogen.sh && \
+    ./configure && \
+    make
 
 ADD ./adskip.sh /usr/bin/adskip.sh
 ADD ./comskip.ini /usr/lib/plexmediaserver/Resources/comskip.ini
