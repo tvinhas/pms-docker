@@ -18,7 +18,7 @@ ondeck="/tmp/ondeck"
 processing="/tmp/processing"
 dvrhome="/dvr"
 comskip="/opt/Comskip/comskip"
-comskipini="/opt/adskip/comskip.ini"
+comskipini="/usr/lib/plexmediaserver/Resources/comskip.ini"
 file=$(basename "$1")
 infile=$1
 
