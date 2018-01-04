@@ -4,8 +4,9 @@ Plex on Docker with commercial removal and some other goodies
 For multiple Plex instances on the same server:
 
 docker run -d --name plex -h 10.0.0.45 \
+ --restart=always \
 -e TZ="America/New_York" \
--e PLEX_CLAIM="claim-4qyf5tergfqe7ppWU22sZ" \
+-e PLEX_CLAIM="claim-fxxN5y1i7s9nFsJcpvJf" \
 -e ADVERTISE_IP="http://10.0.0.45:32400/" \
 -v /plex/config:/config -v /plex/transcode:/transcode -v /dvr:/dvr \
 -p 10.0.0.45:32400:32400/tcp \
@@ -20,8 +21,9 @@ docker run -d --name plex -h 10.0.0.45 \
 tvinhas/pms-docker
 
 docker run -d --name plex-ota -h 10.0.0.46 \
+--restart=always \
 -e TZ="America/New_York" \
--e PLEX_CLAIM="claim-jWdRbwnXzxy1aEZt2LDd" \
+-e PLEX_CLAIM="claim-fxxN5y1i7s9nFsJcpvJf" \
 -e ADVERTISE_IP="http://10.0.0.46:32400/" \
 -v /plex/config-ota:/config -v /plex/transcode-ota:/transcode -v /dvr:/dvr \
 -p 10.0.0.46:32400:32400/tcp \
