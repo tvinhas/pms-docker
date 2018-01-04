@@ -5,7 +5,7 @@ For multiple Plex instances on the same server:
 
 ```
 docker run -d --name plex -h 10.0.0.45 \
- --restart=always \
+--restart=always \
 -e TZ="America/New_York" \
 -e PLEX_CLAIM="claim-fxxN5y1i7s9nFsJcpvJf" \
 -e ADVERTISE_IP="http://10.0.0.45:32400/" \
