@@ -3,6 +3,7 @@ Plex on Docker with commercial removal and some other goodies
 
 For multiple Plex instances on the same server:
 
+```
 docker run -d --name plex -h 10.0.0.45 \
  --restart=always \
 -e TZ="America/New_York" \
@@ -19,7 +20,9 @@ docker run -d --name plex -h 10.0.0.45 \
 -p 10.0.0.45:32413:32413/udp \
 -p 10.0.0.45:32414:32414/udp \
 tvinhas/pms-docker
+```
 
+```
 docker run -d --name plex-ota -h 10.0.0.46 \
 --restart=always \
 -e TZ="America/New_York" \
@@ -36,3 +39,4 @@ docker run -d --name plex-ota -h 10.0.0.46 \
 -p 10.0.0.46:32413:32413/udp \
 -p 10.0.0.46:32414:32414/udp \
 tvinhas/pms-docker
+```
