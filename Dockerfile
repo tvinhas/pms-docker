@@ -9,7 +9,7 @@ RUN apt-get update && \
     git clone git://github.com/erikkaashoek/Comskip && \
     cd Comskip && \
     ./autogen.sh && \
-    ./configure && \
+    ./configure --enable-donator && \
     make
 
 ADD ./adskip.sh /usr/bin/adskip.sh
